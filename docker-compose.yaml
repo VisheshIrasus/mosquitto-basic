@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  mosquitto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mosquitto
+    environment:
+      - MQTT_USER=saurabh
+      - MQTT_PASSWORD=saurabh
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
