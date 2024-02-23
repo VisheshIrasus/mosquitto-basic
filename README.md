@@ -51,3 +51,12 @@ mosquitto_sub -h "localhost" -p 1883 -t "/data" -u "saurabh" -P "saurabh" -q 1 -
 ```
 sudo docker exec -it mosquitto sh
 ```
+
+
+# Clean session flag
+
+https://stackoverflow.com/a/26973300
+
+https://mosquitto.org/man/mosquitto_pub-1.html
+https://mosquitto.org/man/mosquitto_sub-1.html
+https://pagefault.blog/2020/02/05/how-to-set-up-persistent-storage-for-mosquitto-mqtt-broker/
